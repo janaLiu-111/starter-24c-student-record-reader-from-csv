@@ -6,6 +6,7 @@
 int main() {
   // bind std::ifstream to file...
   std::ifstream ifs("./data/input.csv");
+  Student student = ReadStudentRecFromStream(ifs);
 
   // testing your implementation...
   while (ifs.good()) {
